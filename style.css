@@ -1,0 +1,762 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+nav{
+    background-color:rgb(214, 203, 203);
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+}
+
+#navpart-1{
+    display: flex;
+    gap: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: small;
+    font-weight: 100;
+    color:rgb(50, 48, 48);
+}
+
+#navpart-2{
+    display: flex;
+    gap: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: small;
+    font-weight: 100;
+    color:rgb(50, 48, 48);
+}
+nav h2{
+    font-size:40px;
+    font-weight: 100;
+}
+#navpart-1 h3:hover{
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+#navpart-2 h3:hover{
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+#front{
+    height: 100%;
+    width: 100%;
+    background-image: url(https://alephbeauty.com/cdn/shop/files/aleph-beauty-519-mcu-1400_a6cc296c-dfb9-49e6-b60d-9751d4ddb246_2560x.jpg?v=1668063737);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    border: 20px solid white;
+}
+#front button{
+    padding: 10px 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+#front button:hover{
+    background-color: black;
+    color: white;
+}
+#front h1{
+    font-size: 60px;
+    font-weight: 200;
+    color: white;
+    margin-top: 60px;
+}
+#front h4{
+    color: white;
+    font-weight: 200;
+    margin-top: 10px;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    background-color:transparent;
+    border-left: 20px solid white;
+    border-right: 20px solid white;
+    display: flex;
+}
+#main1{
+    height: 100%;
+    width: 50%;
+    background-image: url(https://alephbeauty.com/cdn/shop/files/aleph-concealer-foundation-2-078.jpg?v=1660688939&width=2000);
+    background-size: cover;
+    background-position: center;
+}
+#main2{
+    height: 100%;
+    width: 50%;
+    background-color:aliceblue;
+}
+#main2 h1{
+    font-size: 40px;
+    font-weight: 200;
+    margin-top: 60px;
+    margin-left: 50px;
+}
+#main2 h2{
+    font-size: 40px;
+    font-weight: 200;
+    margin-top: 20px;
+    margin-left: 70px;
+}
+#main2 h3{
+    font-size: 40px;
+    font-weight: 200;
+    margin-top: 20px;
+    margin-left: 100px;
+}
+#main2 h4{
+    margin-left: 60px;
+    margin-top: 30px;
+    width: 80%;
+    font-weight: 200;
+    font-size: 20px;
+}
+#main2 h5{
+    margin-left: 60px;
+    margin-top: 30px;
+    width: 80%;
+    font-weight: 200;
+    font-size: 20px;
+}
+#check{
+    display: flex;
+    gap: 30px;
+    padding: 50px;
+}
+a{
+    text-decoration: none;
+    padding: 8px 20px;
+    background-color: cornsilk;
+    margin-left:140px;
+    font-size: 20px;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: black;
+}
+a:hover{
+    background-color: black;
+    color: white;
+
+}
+#box{
+    height: 150%;
+    width: 100%;
+    background-color:cornsilk;
+    border-right: 20px solid white;
+    border-left: 20px solid white;
+    position: relative;
+
+}
+span{
+    font-style: italic;
+}
+#box h1{
+    font-size: 50px;
+    font-weight: 300;
+}
+#box h4{
+    font-size: 20px;
+    font-weight: 200;
+    width: 90%;
+    margin-top: 10px;
+    line-height: 30px;
+}
+#box button{
+    padding: 4px 10px;
+    font-size: 25px;
+    font-weight: 200;
+    margin-top: 30px;
+    margin-left: 100px;
+    text-transform: uppercase;
+    border-radius: 30px;
+    border:2px solid blue;
+    cursor: pointer;
+}
+#box button:active{
+    background-color: black;
+    color: white;
+    scale: 0.9;
+}
+#text{
+    width: 60%;
+    position: absolute;
+    top: 40%;
+    left: 18%;
+    padding-left: 10%;
+}
+#box1{
+    height: 20%;
+    width: 15%;
+    overflow: hidden;
+    position: absolute;
+    top: 10%;
+    left: 35%;
+    border-radius: 20px;
+}
+#box1 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: all ease 3s;
+}
+#box1:hover img{
+    scale: 1.5;
+}
+#box2{
+    overflow: hidden;
+    height: 18%;
+    width: 15%;
+    position: absolute;
+    top: 40%;
+    left: 20px;
+    border-radius: 20px;
+}
+#box2 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: all ease 3s;
+}
+#box2:hover img{
+    scale: 1.5;
+}
+#box3{
+    overflow: hidden;
+    height: 20%;
+    width: 15%;
+    position: absolute;
+    top: 40%;
+    right: 5%;
+    border-radius: 20px;
+    transition:cubic-bezier(0.19, 1, 0.22, 1) 8s;
+}
+#box3 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: all ease 3s;
+}
+#box3:hover img{
+    scale: 1.5;
+}
+#box4{
+    overflow: hidden;
+    height: 20%;
+    width: 20%;
+    position: absolute;
+    top: 70%;
+    left: 20%;
+    border-radius: 20px;
+    transition:cubic-bezier(0.19, 1, 0.22, 1) 8s;
+}
+#box4 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: all ease 3s;
+}
+#box4:hover img{
+    scale: 1.5;
+}
+#box5{
+    overflow: hidden;
+    height: 15%;
+    width: 15%;
+    position: absolute;
+    top: 75%;
+    left:60%;
+    border-radius: 20px;
+    transition:cubic-bezier(0.19, 1, 0.22, 1) 8s;
+}
+#box5 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: all ease 3s;
+}
+#box5:hover img{
+    scale: 1.5;
+}
+#info{
+    height: 80%;
+    width: 100%;
+    background-color: #d9c7aa;
+    border-left: 20px solid white;
+    border-right: 20px solid white;
+    text-align:center;
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-direction: column;
+    padding: 70px;
+
+}
+#stiker{
+    width: 90%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#info h1{
+    font-weight: 100;
+    font-size: 30px;
+    width: 70%;
+}
+.logo1{
+    height: 30px;
+    width: 100px;
+    transition: all ease 1s;
+    cursor: pointer;
+}
+.logo1:hover{
+    scale: 1.3;
+    transition: all ease 2s;
+}
+
+#feature{
+    width: 100%;
+    height: 20%;
+    background-color: white;
+    border-left: 20px solid white;
+    border-right: 20px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+#feature ol{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+#feature h1{
+    font-size: 40px;
+}
+#feature h4{
+    font-size: 20px;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    cursor: pointer;
+}
+#feature h5{
+    font-size: 20px;
+    color:gray;
+    cursor: pointer;
+}
+#feature h5{
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+#feature button{
+    background-color: cornsilk;
+    padding: 6px 20px;
+    font-size: 20px;
+    border-radius: 20px;
+    border:2px solid blue;
+    text-transform:uppercase ;
+}
+#feature button:hover{
+    background-color: black;
+    color: white;
+}
+
+#imgbox{
+    height: 80%;
+    width: 100%;
+    background-color:aqua;
+    border-left: 20px solid white;
+    border-right: 20px solid white;
+    display: flex;
+    justify-content: space-around;
+}
+#imgbox1{
+    height:100%;
+    width: 33%;
+    background-color: #f1e9dd;
+    background-image: url(https://alephbeauty.com/cdn/shop/files/aleph-cheek-lip-tint-gloria-6g-Jar_3200x3724px_21e686b4-bd0e-4c20-a12d-fe4ee5b331b4.png?v=1708369173&width=1600);
+    background-position: center;
+    background-size: cover;
+    border: 2px solid white;
+    cursor: pointer;
+    position: relative;
+}
+#imgbox2{
+    height:100%;
+    width: 33%;
+    background-color:#f1e9dd;
+    background-image: url(https://alephbeauty.com/cdn/shop/files/aleph-cheek-lip-tint-6gJar_Emanate_update_3200x3724px.png?v=1691119781&width=1600);
+    background-size: cover;
+    background-position: center;
+    border: 2px solid white;
+    cursor: pointer;
+    position: relative;
+}
+#imgbox3{
+    height:100%;
+    width: 34%;
+    background-color: #f1e9dd;
+    background-image: url(https://alephbeauty.com/cdn/shop/files/aleph-cheek-lip-tint-6g-Jar_Grounded_3200x3724px.png?v=1663891629&width=1600);
+    background-size: cover;
+    background-position: center;
+    border: 2px solid white;
+    cursor: pointer;
+    position: relative;
+}
+#imgbox1 h3{
+    padding: 30px;
+}
+#imgbox2 h3{
+    padding: 30px;
+}
+#imgbox3 h3{
+    padding: 30px;
+}
+#imgbox1 header{
+    background-color:transparent;
+    height: 70px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    ol{
+        padding: 20px;
+    }
+}
+#imgbox2 header{
+    background-color:transparent;
+    height: 70px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    ol{
+        padding: 20px;
+        font-weight: 300;
+    }
+}
+#imgbox3 header{
+    background-color:transparent;
+    height: 70px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    ol{
+        padding: 20px;
+        font-weight: 100;
+    }
+}
+#inner1{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+#inner1 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#imgbox1:hover #inner1{
+    display: block;
+}
+#inner2{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+#inner2 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#imgbox2:hover #inner2{
+    display: block;
+}
+#inner3{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+#inner3 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#imgbox3:hover #inner3{
+    display: block;
+}
+#think{
+    height: 20%;
+    width: 100%;
+    background-color: azure;
+    border-left: 20px solid white;
+    border-right: 20px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#think h1{
+    font-size: 40px;
+    text-transform: capitalize;
+    font-weight: 200;
+}
+.parent{
+    height: 80%;
+    background-color: transparent;
+    padding: 10px;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+.parent::-webkit-scrollbar{
+    display: none;
+}
+.mainbox{
+    height: 80%;
+    width: 20%;
+    background-color: blue;
+    margin: -1px;
+    display: flex;
+    display:inline-flex;
+    animation-name: move;
+    animation-duration: 7s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    margin-top: 20px;
+}
+@keyframes move{
+    from{
+        transform: translate(0);
+    }
+    to{
+        transform: translate(calc(-100% - 50px));
+    }
+}
+.mainbox img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#ethic{
+    height: 100%;
+    width: 100%;
+    background-color: #f5f1e9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 20px solid white;
+    border-right: 20px solid white;
+}
+#ethic1{
+    height: 70%;
+    width: 25%;
+    background-color: transparent;
+}
+#ethic2{
+    height: 80%;
+    width: 25%;
+    background-color: transparent;
+    margin-top: 68px;
+}
+#ethic3{
+    height: 80%;
+    width: 25%;
+    background-color: transparent;
+    margin-top: 68px;
+}
+#ethic4{
+    height: 80%;
+    width: 25%;
+    background-color: transparent;
+    margin-top: 68px;
+}
+#ethic1 h1{
+  margin-left: 30px;
+  margin-top: 40px;
+  font-size: 40px;
+  font-weight: 200;
+}
+#ethic1 span{
+    margin-left: 30px;
+}
+#ethic2 img{
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+#ethic2 h1{
+    font-size: 20px;
+    color: rgb(55, 52, 52);
+    letter-spacing: 2px;
+    margin: 10px;
+}
+#ethic2 h2{
+  font-size: 20px;
+  color: rgb(30, 29, 29);
+  margin-left: 10px;
+  margin-top: 20px;
+}
+#ethic2 button{
+    padding: 6px 16px;
+    margin: 30px;
+    font-size: 20px;
+    border: 2px solid white;
+    border-radius: 5px;
+    opacity: 0;
+}
+#ethic2 button:hover{
+    background-color: black;
+    color: white;
+    opacity: 2;
+}
+#ethic3 img{
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+#ethic3 h1{
+    font-size: 20px;
+    color: rgb(55, 52, 52);
+    letter-spacing: 2px;
+    margin: 10px;
+}
+#ethic3 h2{
+    font-size: 20px;
+    color: rgb(30, 29, 29);
+    margin-left: 10px;
+    margin-top: 20px;
+}
+#ethic3 button{
+    padding: 6px 16px;
+    margin: 30px;
+    font-size: 20px;
+    border: 2px solid white;
+    border-radius: 5px;
+    opacity: 0;
+}
+#ethic3 button:hover{
+    background-color: black;
+    color: white;
+    opacity: 2;
+}
+#ethic4 img{
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+#ethic4 h1{
+    font-size: 20px;
+    color: rgb(55, 52, 52);
+    letter-spacing: 2px;
+    margin: 10px;
+}
+#ethic4 h2{
+    font-size: 20px;
+    color: rgb(30, 29, 29);
+    margin-left: 10px;
+    margin-top: 20px;
+}
+#ethic4 button{
+    padding: 6px 16px;
+    margin: 30px;
+    font-size: 20px;
+    border: 2px solid white;
+    border-radius: 5px;
+    opacity: 0;
+}
+#ethic4 button:hover{
+    background-color: black;
+    color: white;
+    opacity: 2;
+}
+
+#look{
+    height: 100%;
+    width: 100%;
+    background-color:rgb(248, 246, 243);
+    border-left: 20px solid white;
+    border-right: 20px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: none;
+}
+#look h1{
+    font-size: 50px;
+    text-transform:capitalize ;
+    font-family:  monospace;
+}
+#pic{
+    height: 90%;
+    width: 40%;
+    background-image: url(https://i.pinimg.com/564x/38/b7/4d/38b74d85fa78f33c5663357343519c21.jpg);
+    background-size: cover;
+    background-position:50% 10%;
+    position: relative;
+}
+#img1{
+    position: absolute;
+    left: 75%;
+    bottom: 30%;
+}
+#img2{
+    position: absolute;
+    height: 60%;
+    right: 80%;
+    bottom: 0;
+}
+
+
+
+
+
+
+
+
+
